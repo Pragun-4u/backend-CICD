@@ -15,6 +15,7 @@ jobs:
 
       - name: Update known hosts
         run: |
+          mkdir -p ~/.ssh
           echo "$HOST_KEY" >> ~/.ssh/known_hosts
 
       - name: Debug SSH connection
